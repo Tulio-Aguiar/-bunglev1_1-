@@ -1,0 +1,64 @@
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    html {
+                        scroll-behavior: smooth;
+                    }
+                    
+                    section {
+                        width: 100%;
+                        height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    body {
+                        background: black;
+                    }
+                    
+                    #section1 {
+                        background: lightcoral;
+                    }
+                    
+                    #section2 {
+                        background: yellow;
+                    }
+                    
+                    #section3 {
+                        background: lightgreen;
+                    }
+                    
+                    a {
+                        font-size: 80px;
+                        color: #000;
+                        line-height: 100px;
+                        text-decoration: none;
+                        font-weight: 900;
+                    }
+                    
+                    p {
+                        font-size: 80px;
+                        font-size: 100px;
+                        position: relative;
+                        top: 20px;
+                        animation: arrowMove 1.5s ease infinite;
+                    }
+                    
+                    @keyframes arrowMove {
+                        0% {
+                            transform: translateY(0vw);
+                            opacity: 1;
+                        }
+                        50% {
+                            transform: translateY(5vw);
+                            opacity: 0.3;
+                        }
+                        100% {
+                            transform: translateY(0vw);
+                            opacity: 1;
+                        }
+                    }
